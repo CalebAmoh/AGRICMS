@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalClose, Sheet, Divider, Typography, Box, FormControl, FormLabel, Input, Select, Option, Stack } from "@mui/joy";
+import { Modal, ModalClose, Sheet, Divider, Typography, Box, FormControl, FormLabel, Input, Select, Option, Stack, Button } from "@mui/joy";
 import { useModal } from '../../context/ModalContext';
 
 export default function AddCropModal() {
@@ -83,6 +83,26 @@ export default function AddCropModal() {
                 </Box>
               </FormControl>
             </Stack>
+            
+            <Box sx={{ display: 'flex', justifyContent: 'flex-end', gap: 2, mt: 2 }}>
+              <Button 
+                variant="outlined" 
+                color="neutral" 
+                onClick={() => handleCloseModal("add")}
+              >
+                Cancel
+              </Button>
+              <Button 
+                variant="solid" 
+                color="primary"
+                onClick={() => {
+                  console.log('Form submitted');
+                  handleCloseModal("add");
+                }}
+              >
+                Submit
+              </Button>
+            </Box>
           </Stack>
         </Typography>
       </Sheet>
