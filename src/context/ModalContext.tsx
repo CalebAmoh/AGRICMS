@@ -7,6 +7,7 @@ interface ModalContextType {
     decline: boolean;
     response: boolean;
     add: boolean;
+    addPlant: boolean;
   };
   handleOpenModal: (modalType: string) => void;
   handleCloseModal: (modalType?: string) => void;
@@ -22,6 +23,7 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
     decline: false,
     response: false,
     add: false,
+    addPlant: false,
   });
 
   // to open modal
@@ -47,6 +49,7 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
         decline: false,
         response: false,
         add: false,
+        addPlant: false,
       });
     }
   }, []);
