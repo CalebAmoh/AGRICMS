@@ -336,6 +336,12 @@ export default function AddPlantModal() {
     <Modal
       open={modals.addPlant}
       onClose={() => handleCloseModal("addPlant")}
+      sx={{
+        zIndex: 10001,
+        position: 'fixed',
+        inset: 0,
+        
+      }}
       >
         <ModalOverflow>
           <ModalDialog aria-labelledby="modal-dialog-overflow">

@@ -237,7 +237,7 @@ export default function Sidebar() {
                 <ListItem sx={{ mt: 0.5 }} component={NavLink} to="/pre-planting" style={getNavLinkStyles}>
                   <ListItemButton>Crop planting</ListItemButton>
                 </ListItem>
-                <ListItem>
+                <ListItem component={NavLink} to="/crop-location" style={getNavLinkStyles}>
                   <ListItemButton>Crop Location</ListItemButton>
                 </ListItem>
                {/*  <ListItem>
