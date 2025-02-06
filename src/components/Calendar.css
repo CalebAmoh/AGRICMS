@@ -1,0 +1,70 @@
+/* Main calendar styles */
+.custom-calendar {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.fc-header-toolbar {
+  padding: 15px !important;
+  margin-bottom: 0 !important;
+}
+
+/* Button styling */
+.fc-button {
+  background-color: #1976d2 !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+  transition: background-color 0.2s !important;
+  font-size: 0.9em !important;
+}
+
+.fc-button-group {
+  gap: 8px !important;
+}
+
+.fc-button-group + .fc-button {
+  margin-left: 8px !important;
+}
+
+.fc-button:hover {
+  background-color: #1565c0 !important;
+}
+
+.fc-button-active {
+  background-color: #1565c0 !important;
+}
+
+/* Day header styling */
+.calendar-header {
+  background-color: #f5f5f5 !important;
+  padding: 10px 0 !important;
+  font-weight: 600 !important;
+}
+
+/* Today's date styling */
+.fc-day-today {
+  background-color: #e3f2fd !important;
+}
+
+/* Event styling */
+.fc-event {
+  border-radius: 4px !important;
+  padding: 2px 4px !important;
+  font-size: 0.85em !important;
+  border: none !important;
+}
+
+/* Grid cell styling */
+.fc-daygrid-day {
+  transition: background-color 0.2s;
+}
+
+.fc-daygrid-day:hover {
+  background-color: #f5f5f5;
+} 

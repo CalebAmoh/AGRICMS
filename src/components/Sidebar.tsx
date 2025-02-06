@@ -193,7 +193,7 @@ export default function Sidebar() {
             </ListItemButton>
           </ListItem>
 
-          <ListItem>
+          <ListItem component={NavLink} to="/activity-planner" style={getNavLinkStyles}>
             <ListItemButton>
               <EditCalendarTwoToneIcon />
               <ListItemContent>
